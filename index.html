@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Pricing component with toggle</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Our Pricing</h1>
+      <input type="checkbox" name="toggle" id="toggle" />
+
+      <div class="toggle__container">
+        <span class="month">Annually</span>
+        <div class="toggler__wrapper">
+          <label for="toggle" id="test"></label>
+        </div>
+        <span class="month">Monthly</span>
+      </div>
+      <section class="card__container">
+        <div class="card card_1" id="card_1">
+          <h2>Basic</h2>
+          <div class="price__container">
+            <span class="dollar">&dollar;</span>
+            <span class="price"></span>
+          </div>
+          <ul class="benefit__container">
+            <li class="benefit__item">500 GB Storage</li>
+            <li class="benefit__item">2 Users Allowed</li>
+            <li class="benefit__item">Send up to 3 GB</li>
+          </ul>
+          <a href="#card_1" target="_self" class="btn">LEARN MORE</a>
+        </div>
+        <div class="card card_2" id="card_2">
+          <h2>Professional</h2>
+          <div class="price__container">
+            <span class="dollar">&dollar;</span>
+            <span class="price"></span>
+          </div>
+          <ul class="benefit__container">
+            <li class="benefit__item">1 TB Storage</li>
+            <li class="benefit__item">5 Users Allowed</li>
+            <li class="benefit__item">Send up to 10 GB</li>
+          </ul>
+          <a href="#card_2" target="_self" class="btn">LEARN MORE</a>
+        </div>
+        <div class="card card_3" id="card_3">
+          <h2>Master</h2>
+          <div class="price__container">
+            <span class="dollar">&dollar;</span>
+            <span class="price"></span>
+          </div>
+          <ul class="benefit__container">
+            <li class="benefit__item">2 TB Storage</li>
+            <li class="benefit__item">10 Users Allowed</li>
+            <li class="benefit__item">Send up to 20 GB</li>
+          </ul>
+          <a href="#card_3" target="_self" class="btn">LEARN MORE</a>
+        </div>
+      </section>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/NCodeID">NCodeID</a>.
+      </div>
+    </main>
+  </body>
+</html>
